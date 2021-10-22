@@ -1,0 +1,20 @@
+@use "../globals" as *;
+@use "../utilities" as *;
+main {
+  position: relative;
+  padding-bottom: 3rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: rem(12) auto;
+  &__title {
+    font-weight: 600;
+  }
+  &__subtitle {
+    font-size: rem(14);
+    font-weight: 700;
+    color: var(--dark-text1);
+  }
+}

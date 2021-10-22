@@ -14,11 +14,237 @@
     
 </head>
 <body>
-    <h1>Socila media</h1>
-    <div>
-        Hello World!!!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reprehenderit dolorem dolorum recusandae laboriosam fugiat voluptate voluptas, a distinctio maiores.
-    </div>
+    <header class="container header">
+        <div class="header__container">
+    <h1 class="header__title" >Social Media Dashboard</h1>
+    <span class = "header__subtitle">Total Followers: 23,004</spani>
+        </div>
+        <fieldset role="switch" class="toggle" aria-label="theme toggle">
+            <span class="toggle-text">Dark Mode</span>
+            <label for='dark' class='theme-switcher'>
+                <input type="checkbox" name="theme" id="dark">
+                <span class="toggle__background" aria-hidden="true"></span>
+                <span class="toggle__button" aria-hidden="true"></span>
+            </label>
+        </fieldset>
+    </header>
+
+    <main>
+        <section class="card__container container">
+            <div class="card card__facebook">
+                <div class="card__platform">
+                    <img src="./social-media-dashboard-with-theme-switcher-master//images/icon-facebook.svg" alt="facebook" class="card__platform--icon">
+                    <span class="card__platform--username">@nathanf</span>
+                </div>
+                <div class="card__followers">
+                    <div class="card__followers--count">1987</div>
+                    <div class="card__followers--title">Followers</div>
+                </div>
+                <div class="card__date">
+                    <img class="card__date--number" src="./social-media-dashboard-with-theme-switcher-master//images/icon-up.svg" alt="up-icon" >
+                   <span class="card__date--today">12 Today</span> 
+
+            </div>
+            </div>
+            <div class="card card__twitter">
+                <div class="card__platform">
+                    <img src="./social-media-dashboard-with-theme-switcher-master//images/icon-twitter.svg" alt="twitter" class="card__platform--icon">
+                    <span class="card__platform--username">@nathanf</span>
+                </div>
+                <div class="card__followers">
+                    <div class="card__followers--count">1044</div>
+                    <div class="card__followers--title">Followers</div>
+                </div>
+                <div class="card__date">
+                    <img class="card__date--number" src="./social-media-dashboard-with-theme-switcher-master//images/icon-up.svg" alt="up-icon" >
+                   <span class="card__date--today">99 Today</span> 
+
+            </div>
+            </div>
+            <div class="card card__instagram">
+                <div class="card__platform">
+                    <img src="./social-media-dashboard-with-theme-switcher-master//images/icon-instagram.svg" alt="instagram" class="card__platform--icon">
+                    <span class="card__platform--username">@realnathanf</span>
+                </div>
+                <div class="card__followers">
+                    <div class="card__followers--count">11k</div>
+                    <div class="card__followers--title">Followers</div>
+                </div>
+                <div class="card__date">
+                    <img class="card__date--number" src="./social-media-dashboard-with-theme-switcher-master//images/icon-up.svg" alt="up-icon" >
+                   <span class="card__date--today">1099 Today</span> 
+
+            </div>
+            </div>
+            <div class="card card__youtube">
+                <div class="card__platform">
+                    <img src="./social-media-dashboard-with-theme-switcher-master//images/icon-youtube.svg" alt="youtube" class="card__platform--icon">
+                    <span class="card__platform--username">@Nathan F.</span>
+                </div>
+                <div class="card__followers">
+                    <div class="card__followers--count">8239</div>
+                    <div class="card__followers--title">Followers</div>
+                </div>
+                <div class="card__date">
+                    <img class="card__date--number" src="./social-media-dashboard-with-theme-switcher-master//images/icon-down.svg" alt="up-icon" >
+                   <span class="card__date--today down">144 Today</span> 
+
+            </div>
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="subtitle">Overview - Today</h2>
+            <div class="card__container card__container--sub">
+                <div class="card  card__sub card__facebook--sub">
+                    
+                    <div class="card__username">
+                        Page Views
+                    </div>
+                    <div class="card__icon">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg" alt="facebook-icon">
+                    </div>
+                    <div class="card__count">
+                        87
+                    </div>
+                    <div class="card__date">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="up-icon">
+                        <span class="card__date--today"> 
+                        30.3%
+                        </span>
+                    </div>
+                </div>
+                <div class="card  card__sub card__facebook--sub">
+                    
+                    <div class="card__username card__likes">
+                       Likes 
+                    </div>
+                    <div class="card__icon">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-facebook.svg" alt="facebook-icon">
+                    </div>
+                    <div class="card__count">
+                       52 
+                    </div>
+                    <div class="card__date">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="down-icon">
+                        <span class="card__date--today down"> 
+                        2%
+                        </span>
+                    </div>
+                </div>
+                <div class="card  card__sub card__instagram--sub">
+                    
+                    <div class="card__username">
+                       Likes 
+                    </div>
+                    <div class="card__icon">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg" alt="instagram-icon">
+                    </div>
+                    <div class="card__count">
+                        5462
+                    </div>
+                    <div class="card__date">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="up-icon">
+                        <span class="card__date--today"> 
+                        22.4%
+                        </span>
+                    </div>
+                </div>
+                <div class="card  card__sub card__instagram--sub">
+                    
+                    <div class="card__username">
+                        Profile Views
+                    </div>
+                    <div class="card__icon">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-instagram.svg" alt="instagram-icon">
+                    </div>
+                    <div class="card__count">
+                        52k
+                    </div>
+                    <div class="card__date">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="up-icon">
+                        <span class="card__date--today"> 
+                        17.2%
+                        </span>
+                    </div>
+                </div>
+                <div class="card  card__sub card__twitter--sub">
+                    
+                    <div class="card__username">
+                       Retweets 
+                    </div>
+                    <div class="card__icon">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg" alt="twitter-icon">
+                    </div>
+                    <div class="card__count">
+                        117
+                    </div>
+                    <div class="card__date">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="up-icon">
+                        <span class="card__date--today"> 
+                        12.2%
+                        </span>
+                    </div>
+                </div>
+                <div class="card  card__sub card__facebook--sub">
+                    
+                    <div class="card__username">
+                       Likes 
+                    </div>
+                    <div class="card__icon">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-twitter.svg" alt="twitter-icon">
+                    </div>
+                    <div class="card__count">
+                    502
+                    </div>
+                    <div class="card__date">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-up.svg" alt="up-icon">
+                        <span class="card__date--today"> 
+                        32.2%
+                        </span>
+                    </div>
+                </div>
+                <div class="card  card__sub card__youtube--sub">
+                    
+                    <div class="card__username">
+                       Likes 
+                    </div>
+                    <div class="card__icon">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg" alt="youtube-icon">
+                    </div>
+                    <div class="card__count">
+                        107
+                    </div>
+                    <div class="card__date">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="down-icon">
+                        <span class="card__date--today down"> 
+                        17.2%
+                        </span>
+                    </div>
+                </div>
+                <div class="card  card__sub card__youtube--sub">
+                    
+                    <div class="card__username">
+                       Total Views 
+                    </div>
+                    <div class="card__icon">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-youtube.svg" alt="youtube-icon">
+                    </div>
+                    <div class="card__count">
+                        1407
+                    </div>
+                    <div class="card__date">
+                        <img src="./social-media-dashboard-with-theme-switcher-master/images/icon-down.svg" alt="down-icon">
+                        <span class="card__date--today down"> 
+                        12%
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
+    <footer>
+        <span>Challenge by <a href="https://frontendmentor.io" target="blank">Frontend Mentor.</a> Coded by <a href="#">Ukesh Shrestha</a> </span>
+    </footer>
 </body>
 </html>
