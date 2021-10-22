@@ -10,11 +10,12 @@ main {
   align-items: center;
   margin: rem(12) auto;
   &__title {
+    color: var(--text-color2);
     font-weight: 600;
   }
   &__subtitle {
     font-size: rem(14);
     font-weight: 700;
-    color: var(--dark-text1);
+    color: var(--text-color1);
   }
 }

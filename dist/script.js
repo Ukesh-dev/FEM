@@ -1,2 +1,2 @@
-"use strict";
+"use strict";var toggle=document.getElementById("dark"),themeColor=localStorage.getItem("theme")?localStorage.getItem("theme"):prefersColorScheme();function setTheme(e){"dark"==e?(document.body.classList="dark",toggle.checked=!0):toggle.checked=!1}function prefersColorScheme(){return window.matchMedia("(prefers-color-shceme: light)").matches?"light":"dark"}setTheme(themeColor),toggle.addEventListener("click",(function(){toggle.checked?(document.body.classList="dark",localStorage.setItem("theme","dark")):(document.body.classList="light",localStorage.setItem("theme","light"))}));
 //# sourceMappingURL=script.js.map

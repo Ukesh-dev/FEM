@@ -7,14 +7,12 @@
   --instagram-middle: hsl(5, 77%, 71%);
   --instagram-end: hsl(329, 70%, 58%);
   --youtube: hsl(348, 97%, 39%);
-  --toggle-light: hsl(230, 22%, 74%);
-  --toggle-dark: linear-gradient(
-    225deg,
-    hsl(210, 78%, 56) 0%,
-    hsl(146, 68%, 55%) 98.9%
-  );
+  --toggle-light: hsl(230, 22%, 80%);
+  --toggle-bg-start: hsl(210, 78%, 56%);
+  --toggle-bg-end: hsl(146, 68%, 55%);
   --dark-bg: hsl(230, 17%, 14%);
   --dark-top-bg: hsl(232, 19%, 15%);
+  --dark-card-hover: #343b56;
   --dark-card: hsl(228, 28%, 20%);
   --dark-text1: hsl(228, 34%, 66%);
   --dark-text2: hsl(0, 0%, 100%);
@@ -22,8 +20,60 @@
   --dark-up: green;
 
   --light-bg: hsl(0, 0%, 100%);
+  --light-card-hover: #e0e4f0;
   --light-top-bg: hsl(225, 100%, 98%);
   --light-card: hsl(227, 47%, 96%);
   --light-text1: hsl(228, 12%, 44%);
   --light-text2: hsl(230, 17%, 14%);
+
+  --background: var(--light-bg);
+  --card-bg: var(--light-card);
+  --text-color1: var(--light-text1);
+  --text-color2: var(--light-text2);
+  --hover: var(--light-card-hover);
+  --toggler-color: var(--toggle-light);
+  --toggler-button: var(--light-bg);
+  --toggle-text: var(--toggle-light);
+}
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --background: var(--dark-bg);
+//     --card-bg: var(--dark-card);
+//     --text-color1: var(--dark-text1);
+//     --text-color2: var(--dark-text2);
+//     --hover: var(--dark-card-hover);
+//     --toggler-color: linear-gradient(
+//       225deg,
+//       var(--toggle-bg-end) 0%,
+//       var(--toggle-bg-start) 98.02%
+//     );
+//     --toggler-button: var(--dark-bg);
+//     --toggle-text: var(--text-color1);
+//   }
+// }
+
+body.light {
+  --background: var(--light-bg);
+  --card-bg: var(--light-card);
+  --text-color1: var(--light-text1);
+  --text-color2: var(--light-text2);
+  --hover: var(--light-card-hover);
+  --toggler-color: var(--toggle-light);
+  --toggler-button: var(--light-bg);
+  --toggle-text: var(--toggle-light);
+}
+body.dark {
+  --background: var(--dark-bg);
+  --card-bg: var(--dark-card);
+  --text-color1: var(--dark-text1);
+  --text-color2: var(--dark-text2);
+  --hover: var(--dark-card-hover);
+  --toggler-color: linear-gradient(
+    225deg,
+    var(--toggle-bg-end) 0%,
+    var(--toggle-bg-start) 98.02%
+  );
+  --toggler-button: var(--dark-bg);
+  --toggle-text: var(--text-color1);
 }

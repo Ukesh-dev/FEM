@@ -21,9 +21,9 @@
     width: 100%;
     @include breakpoint-down(small) {
     }
-    background-color: var(--dark-card);
+    background-color: var(--card-bg);
     &:hover {
-      filter: brightness(150%);
+      background: var(--hover);
       transition: background-color 0.2s ease-in-out;
     }
     &__facebook {
@@ -69,7 +69,8 @@
       &--username {
         text-align: center;
         font-size: rem(12);
-        color: var(--dark-text1);
+        font-weight: 700;
+        color: var(--text-color1);
       }
     }
     &__followers {
@@ -77,10 +78,11 @@
       &--count {
         font-weight: 700;
         font-size: rem(50);
+        color: var(--text-color2);
       }
       &--title {
         font-size: rem(12);
-        color: var(--dark-text1);
+        color: var(--text-color1);
         letter-spacing: rem(5);
 
         text-transform: uppercase;
@@ -118,7 +120,8 @@
       font-size: rem(14);
       justify-self: flex-start;
       align-self: flex-start;
-      color: var(--dark-text1);
+      color: var(--text-color1);
+      font-weight: 700;
     }
     .card__icon {
       justify-self: flex-end;
@@ -126,6 +129,7 @@
     .card__count {
       font-size: rem(28);
       font-weight: 700;
+      color: var(--text-color2);
       justify-self: flex-start;
     }
     .card__date {
@@ -142,6 +146,7 @@
   font-size: rem(20);
   margin: rem(8) 0 rem(16);
   text-align: left;
+  color: var(--text-color1);
   @include breakpoint-down(medium) {
     margin-bottom: rem(20);
   }
@@ -165,9 +170,11 @@ footer {
 
   span {
     font-size: rem(11);
+    font-weight: 700;
+    color: var(--text-color2);
 
     a {
-      color: var(--dark-text1);
+      color: var(--text-color1);
     }
   }
 }

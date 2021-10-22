@@ -14,6 +14,9 @@
   // }
   &-text {
     margin-right: rem(8);
+    color: var(--toggle-text);
+    font-size: rem(17);
+    font-weight: 700;
   }
   .theme-switcher {
     position: relative;
@@ -35,25 +38,21 @@
     width: 100%;
     height: 100%;
 
-    background: linear-gradient(
-      225deg,
-      hsl(210, 78%, 56) 0%,
-      hsl(146, 68%, 55%) 98.9%
-    );
+    background: var(--toggler-color);
   }
   &__button {
     position: absolute;
-    left: rem(3);
+    left: rem(2);
     top: rem(3);
     height: rem(18);
     width: rem(18);
     display: block;
     border-radius: 50%;
-    background: var(--dark-bg);
+    background: var(--toggler-button);
     transition: all 0.3s ease-out;
   }
 
   #dark:checked ~ .toggle__button {
-    transform: translateX(28px);
+    transform: translateX(30px);
   }
 }
